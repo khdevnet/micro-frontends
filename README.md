@@ -5,6 +5,7 @@ All microfrontends from projects folder can be deployed seperate.
 ```
 npm install -g @angular/cli concurrently
 npm start
+npm run storybook # display components documentation
 
 ```
 
