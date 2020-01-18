@@ -1,4 +1,5 @@
 # Micro frontends
+All microfrontends from projects folder can be deployed seperate.
 
 ## Start Project
 ```
@@ -11,17 +12,11 @@ npm start
 
 ```
 .
-├── docs                                           # Contains documentation files
-├── SW.Checkout.Client                       # It is client project, it simulate real clients, send http requests to API
-├── SW.Checkout.Domain                       # Contains business logic
-├── SW.Checkout.Infrastructure.EventStore    # Contains Marten EventStore contracts implementations
-├── SW.Checkout.Infrastructure.RabbitMQ      # Contains RabbitMQ Message Bus contracts implementations
-├── SW.Checkout.Infrastructure.ReadStorage   # Contains Read Storage contracts implementations
-├── SW.Checkout.Message.Handler              # Contains Message processing console application implementations
-├── SW.Checkout.Read                         # Contains Read contracts
-├── SW.Checkout.StorageReplication           # Contains Database replication console application
-├── SW.Checkout.WebApi                       # Contains Api contracts and enpoinds implementation
-├── SW.Checkout.Core                                  # Contains common functionality of the system, contracts
+├── projects                                 # Contains seperate projects
+├──── cars                                   # Contains Car catalog microfrontend
+├──── trucks                                 # Contains Trucks catalog microfrontend
+├──── welcome-feature                        # Contains Angular element feature
+├── src                                      # Contains core project which aggregate all projects
 ```
 
 ## Development servers
@@ -31,3 +26,8 @@ ng serve trucks
 ng serve cars
 ng serve welcome-feature
 ```
+
+## Resources
+* [combining-multiple-angular-applications](https://medium.com/disney-streaming/combining-multiple-angular-applications-into-a-single-one-e87d530d6527)
+* [using-angular-elements-why-and-how-part](https://blog.bitsrc.io/using-angular-elements-why-and-how-part-1-35f7fd4f0457)
+* [angular-sub-apps-setup](https://github.com/hql287/angular-sub-apps-setup)
