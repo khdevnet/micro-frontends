@@ -1,0 +1,2 @@
+call ng build welcome-feature --prod --output-hashing=none 
+call type .\dist\welcome-feature\runtime-es5.js .\dist\welcome-feature\polyfills-es5.js .\dist\welcome-feature\polyfills-es5.js .\dist\welcome-feature\main-es5.js > .\dist\welcome-feature\welcome-feature.bootstrap.js
