@@ -17,7 +17,7 @@ npm run storybook # display components documentation
 ├──── cars                                   # Contains Car catalog microfrontend
 ├──── trucks                                 # Contains Trucks catalog microfrontend
 ├──── welcome-feature                        # Contains Angular element feature
-├── src                                      # Contains core project which aggregate all projects
+├── src                                      # Contains core project with shared components
 ```
 
 ## Development servers
